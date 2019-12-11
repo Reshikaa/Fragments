@@ -5,21 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".TabLayoutActivity">
 
-    <Button
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load First Fragment"
-        android:id="@+id/btnFragment"
-        android:layout_margin="20dp"/>
+        android:id="@+id/tabId"
+        android:background="#1E88E5"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextColor="#FFFFFF"/>
 
-    <LinearLayout
-        android:id="@+id/fragmentContainer"
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="vertical">
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"/>
 
 </LinearLayout>
