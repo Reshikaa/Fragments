@@ -20,6 +20,7 @@ public class TabLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_layout);
 
+        //Binding//
         viewPager=findViewById(R.id.viewPager);
         tabLayout=findViewById(R.id.tabId);
 
